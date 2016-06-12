@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tic-Tac-Toe</string>
+    <string name="empty_string"></string>
+    <string name="replay_game">Start Over</string>
+    <string name="tic">TIC</string>
+    <string name="tac">TAC</string>
+    <string name="toe">TOE</string>
+    <string name="start_button_text">Start Game</string>
+    <string name="help_button_text">Help</string>
+    <string name="exit">Exit</string>
+</resources>
