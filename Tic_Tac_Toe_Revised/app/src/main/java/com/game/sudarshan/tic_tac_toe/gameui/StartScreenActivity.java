@@ -17,6 +17,8 @@ public class StartScreenActivity extends AppCompatActivity implements SoundInter
     private  MediaPlayer startScreenMusic;
     private int startAudio,exitAudio;
     SoundPool screenSound;
+    private static final String EXIT_STRING="Please press Exit Button to exit the Game";
+    private static final String EXIT_TIP="Exit Tip";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +32,7 @@ public class StartScreenActivity extends AppCompatActivity implements SoundInter
 
    public void startGame(View v){
        playSound(startAudio);
-       Intent intent=new Intent(this,GameActivity.class);
+       Intent intent=new Intent(this,GameImageActivity.class);
        startActivity(intent);
        stopSound();
    }
@@ -55,7 +57,7 @@ public class StartScreenActivity extends AppCompatActivity implements SoundInter
 
     }
 
-
+//Find the description of these three methods in the SoundInterface interface
     @Override
     public void loadSounds() {
         startAudio=screenSound.load(getApplicationContext(), R.raw.startbutton, 1);
@@ -99,9 +101,9 @@ a Dialog Box will appear notifying that only by pressing the exit button we can 
     @Override
     public void onBackPressed() {
         AlertDialog.Builder exitTipBuilder=new AlertDialog.Builder(this);
-        exitTipBuilder.setTitle("Exit Tip");
+        exitTipBuilder.setTitle(EXIT_TIP);
         exitTipBuilder.setCancelable(false);
-        exitTipBuilder.setMessage("Please press Exit Button to exit the Game");
+        exitTipBuilder.setMessage(EXIT_STRING);
         exitTipBuilder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

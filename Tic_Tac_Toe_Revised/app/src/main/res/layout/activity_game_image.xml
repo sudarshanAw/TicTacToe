@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/splashScreenBackground"
+    tools:context="com.example.sudarshan.tic_tac_toegame.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/turn_text"
+        android:text="dfs"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/replay_game"
+        android:id="@+id/replay"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/b_00"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/turn_text"
+        android:layout_toLeftOf="@+id/replay"
+        android:layout_toStartOf="@+id/replay"
+        android:layout_marginTop="54dp" />
+
+    <ImageView
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/b_01"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignTop="@+id/b_00"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/b_02"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignTop="@+id/b_01"
+        android:layout_toRightOf="@+id/replay"
+        android:layout_toEndOf="@+id/replay" />
+
+    <ImageView
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/b_10"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/b_00"
+        android:layout_alignStart="@+id/b_00" />
+
+    <ImageView
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/b_11"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/b_01"
+        android:layout_alignStart="@+id/b_01" />
+
+    <ImageView
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/b_12"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/b_02"
+        android:layout_alignStart="@+id/b_02" />
+
+    <ImageView
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/b_20"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/b_10"
+        android:layout_alignLeft="@+id/b_10"
+        android:layout_alignStart="@+id/b_10" />
+
+    <ImageView
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/b_21"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignTop="@+id/b_20"
+        android:layout_alignLeft="@+id/b_11"
+        android:layout_alignStart="@+id/b_11" />
+
+    <ImageView
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/b_22"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignTop="@+id/b_21"
+        android:layout_alignLeft="@+id/b_12"
+        android:layout_alignStart="@+id/b_12" />
+
+</RelativeLayout>
